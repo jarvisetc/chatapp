@@ -23,7 +23,7 @@ class CustomSnackBar {
       SnackBar(
         content: Row(
           spacing: 10,
-          children: [Icon(Icons.cancel), Text(message)],
+          children: [Icon(Icons.cancel), Expanded(child: Text(message))],
         ),
         backgroundColor: CustomColors.red,
         shape: RoundedRectangleBorder(
